@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* font-family: "Inter", sans-serif; */
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -75px;
+}
+
+#root {
+  background: rgb(2, 0, 11);
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+textarea {
+  outline: none;
+  font-size: 16px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.logo-text {
+  font-size: 24px;
+  color: pink;
+  font-weight: 400;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-block: 10px;
+}
+
+header img {
+  position: absolute;
+  left: -25px;
+  top: 3px;
+}
+
+header .site-logo {
+  color: plum;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+header a {
+  position: relative;
+  text-decoration: none;
+  color: pink;
+  font-weight: 600;
+  padding: 5px 20px;
+}
+
+header a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+.app {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.title {
+  color: rgb(160, 192, 221);
+  text-shadow: 1px 1px 2px blue;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 48px;
+}
+
+.btn {
+  margin-top: 50px;
+}
+
+.button {
+  background-color: plum;
+  border: 2px solid transparent;
+  margin: 0 5px;
+  font-size: 17px;
+}
+
+.button:hover {
+  background-color: lightyellow;
+  border: 2px solid plum;
+}
+
+.top {
+  background-image: url('./assets/book2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
+  padding: 40px 20px;
+}
+
+/* Story styles */
+
+.story-wrapper {
+  margin: 25px 2rem 0;
+  padding: 1rem;
+  font-size: 17px;
+  background-color: rgb(12, 10, 20);
+  background-color: rgb(204, 183, 153);
+  color: rgb(112, 142, 160);
+  border-radius: 10px;
+  background-image: url('./assets/beg-stars-h.jpg');
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.story-prompt {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.story-text {
+  margin-top: 0;
+}
+
+.story-wrapper p {
+  margin-bottom: 0;
+}
+
+.story-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Leaderboard styles */
+
+.night-bg {
+  background-image: url('./assets/night.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 75vh;
+}
+
+.items {
+  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  max-height: 75vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.items::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #555;
+}
+
+.items::-webkit-scrollbar
+{
+	width: 12px;
+  
+	background-color: #555;
+}
+
+.items::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(210, 163, 199, 0.5);;
+}
+
+.story-item {
+  background-color: rgba(210, 163, 199, 0.5);
+  border-radius: 10px;
+  width: 550px;
+  padding: 1rem;
+  position: relative;
+}
+
+.story-item .story-text {
+  padding-bottom: 10px;
+}
+
+.story-rate {
+  position: absolute !important;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+/* Story */
+
+.center {
+  margin: 0 auto;
+}
+
+/* Not Found styles */
+
+.not-found-container {
+  min-height: 350px;
+  padding: 45px 23px;
+
+}
+
+.not-found-container a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  border: none;
+  width: 100%;
+  margin-top: 27px;
+  padding-block: .75rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform .1s ease-in-out;
+}
+
+.not-found-container a:hover {
+  transform: translate(1px, 1px);
+}
+
+/* Share Social styles */
+
+.react-share__ShareButton {
+  margin: 0 5px !important;
+}
