@@ -162,7 +162,7 @@ header a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 75vh;
+  min-height: 85vh;
 }
 
 .items {
@@ -188,7 +188,6 @@ header a:hover {
 .items::-webkit-scrollbar
 {
 	width: 12px;
-  
 	background-color: #555;
 }
 
@@ -228,7 +227,6 @@ header a:hover {
 .not-found-container {
   min-height: 350px;
   padding: 45px 23px;
-
 }
 
 .not-found-container a {
