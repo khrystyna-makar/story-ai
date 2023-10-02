@@ -8,15 +8,6 @@ import { v4 as uuid } from 'uuid';
 
 function Home() {
 
-    const API_KEY = "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";
-
-    const API_body = {
-        "model": "gpt-3.5-turbo",
-        "messages": [],
-        "temperature": 0,
-        "max_tokens": 256
-    }
-
     const [story, setStory] = useState({})
 
     const navigate = useNavigate();
@@ -50,10 +41,6 @@ function Home() {
     }
 
     const save = () => {
-        // if(story.id === null){
-        //     const id = uuid();
-        //     story.id = id;
-        // }
         const storyJSON = JSON.stringify(story);
         localStorage.setItem(story.id, storyJSON);
     }

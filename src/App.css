@@ -40,6 +40,7 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 23px;
+  color: #7499BE;
 }
 
 .logo-text {
@@ -128,7 +129,8 @@ header a:hover {
   font-size: 17px;
   background-color: rgb(12, 10, 20);
   background-color: rgb(204, 183, 153);
-  color: rgb(112, 142, 160);
+  /* color: rgb(112, 142, 160); */
+  color: #282C39;
   border-radius: 10px;
   background-image: url('./assets/beg-stars-h.jpg');
   opacity: 0.8;
