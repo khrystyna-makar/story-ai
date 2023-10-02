@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import '../App.css'
 import data from '../data/stories.json'
 import StyledRating from '../components/StyledRating'
@@ -18,24 +18,6 @@ function Home() {
     }
 
     async function callAI() {
-        // try {
-        //   await fetch("https://api.openai.com/v1/chat/completions", {
-        //     method: "POST",
-        //     headers: {
-        //       "Content-Type": "application/json",
-        //       "Authorization": "Bearer " + API_KEY
-        //     },
-        //     body: JSON.stringify(API_body)
-        //   }).then((data) => {
-        //     return data.json();
-        //   }).catch((e) => {
-        //     setStory(getRandomStory());
-        //   }).then((data) => {
-        //     console.log(data);
-        //   })
-        // } catch(e){
-        //   console.log('catch')
-       // }
         const id = uuid();
         setStory({ id, start: story.start, text: getRandomStory(), rate: 0 })
     }
